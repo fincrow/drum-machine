@@ -1,0 +1,77 @@
+:root {
+  background-color: rgb(255, 228, 196);
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#drum-machine {
+  width: 60%;
+  height: 30%;
+  max-width: 500px;
+  background-color: rgb(211, 211, 211);
+  border: 6px solid rgb(222, 184, 135);
+  display: flex;
+  padding: 20px;
+}
+
+#drum-pad-section {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.drum-pad {
+  width: 90%;
+  height: 90%;
+  justify-self: center;
+  align-self: center;
+  background-color: rgb(235, 235, 235);
+  border: 2px solid rgb(128, 128, 128);
+  border-radius: 10px;
+  box-shadow: 2px 2px rgb(150, 150, 150);
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: large;
+}
+
+.drum-pad:hover {
+  background-color: rgb(200, 200, 200);
+  border: 2px solid rgb(128, 128, 128);
+}
+
+.drum-pad.pressed {
+  background-color: rgb(255, 215, 0);
+  border: 2px solid rgb(128, 128, 128);
+  box-shadow: none;
+  transform: translateY(2px) translateX(2px);
+}
+
+#display-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#display {
+  height: 40px;
+  width: 75%;
+  max-width: 200px;
+  background-color: rgb(235, 235, 235);
+  border: 6px solid rgb(222, 184, 135);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
